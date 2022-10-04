@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Washing Machine</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    
+    <!-- Nav Bar from Boostrap -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Intro">Introduction</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#QandA">Interview Questions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Sketches">Component Sketches</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Observations">Key Observations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Personas">Personas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Storyboard">Storyboard</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Body Page -->
+      <div class="m-0 bg-emerald-600">
+        <!-- Main Image -->
+        <div id="Home" class="mainImg flex justify-center items-center">
+            <div class="bg-yellow-400 flex justify-center items-center p-3 rounded-xl font-bold text-3xl">
+                <div class="flex justify-center items-center p-5 rounded-lg border-solid border-4 border-black">
+                    The Brown University Washing Machine
+                </div>
+            </div>
+        </div>
+        <!-- Introduction -->
+        <div id="Intro" class="bg-yellow-400 flex flex-col justify-start items-center py-5 font-bold text-4xl">
+            Introduction
+            <div class="flex flex-row justify-between items-start p-3 my-4">
+                <div class="flex flex-col justify-start w-2/5 mx-4 bg-yellow-50 rounded-xl p-3">
+                    <h2 class="py-1">Why the washer?</h2>
+                    <ul class="text-base font-normal leading-9 my-1">
+                        <li><strong>-</strong> It's a public interface shared by an entire dorm.</li>
+                        <li><strong>-</strong> It contains multiple moving parts, requuiring different types of interactions.</li>
+                        <li><strong>-</strong> It's used differently by each person, depending on their preferences.</li>
+                        <li><strong>- It's often a source of frustration and time waste for many students.</strong></li>
+                    </ul>
+                </div>
+                <div class="mx-4 bg-emerald-200">
+                    <img src="./assets/washer.png" class="w-96" />
+                </div>
+                <div class="flex flex-col justify-start w-2/5 mx-4 bg-yellow-50 rounded-xl p-3">
+                    <h2 class="py-1">What's the goal?</h2>
+                    <ul class="text-base font-normal leading-9 my-1">
+                        <li><strong>-</strong> Identify the core user persona.</li>
+                        <li><strong>-</strong> Discover their engagement with this interface.</li>
+                        <li><strong>-</strong> Pinpoint the struggles of their interaction.</li>
+                        <li><strong>- Gather information so the washing machine can be improved for its target users.</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Questions & Responses -->
+        <div id="QandA" class="bg-yellow-50 flex flex-col justify-start p-5">
+            <h2 class="pb-5 text-center font-bold text-4xl">User Interview Questions and Responses</h2>
+            <!-- Accordian from Bootstrap -->
+            <div class="accordion" id="accordionExample">
+                <!-- Item #1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      How often do you do your laundry at school?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Students tend to do laundry either once a week or every other week.
+                    </div>
+                  </div>
+                </div>
+                <!-- Item #2 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How do you decide when to do your laundry?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Students tend to choose based around their schedule rather than their perception of the laundry room's busyness. Most people choose to do laundry when they have 
+                      lots of other work so they can work in their rooms while they wait. Even though they know the busy hours are in the afternoons, they don't weigh this as much as 
+                      their own convenience, thereby creating heavy traffic on afternoons.
+                    </div>
+                  </div>
+                </div>
+                <!-- Item #3 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        How many washers do you use each time you do your laundry?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Students who do their laundry every week usually use 1 washer per laundry. Students who do it every other week usually use 2 per laundry. Other factors that affect laundry 
+                      use include their preferences for splitting up their laundry by color, types of clothing, and fullness of each washer.
+                    </div>
+                  </div>
+                </div>
+                <!-- Item #4 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        What type of detergent do you use?
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      A large majority of students use tide pods, although there are a few that use liquid detergent.
+                    </div>
+                  </div>
+                </div>
+                <!-- Item #5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Walk me through the steps you go through to do your laundry.
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        They usually go down to the laundry room to check on the washers' availability prior to bringing down their laundry. If there are washers available, they would 
+                        go back to their rooms to bring down their laundry. Then, they would load their laundry, insert their detergent (if pod then with clothes, if liquid then in tray), 
+                        then configures their preferences on the control panel, lastly sets the timer on their phone to match the time displayed on the machine after pressing start.
+                      </div>
+                    </div>
+                </div>
+                <!-- Item #6 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                          From the steps you mentioned, is there one that you find particularly annoying?
+                      </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Everyone found the step of making a separate trip to check on the washers' availability to be the most annoying.
+                      </div>
+                    </div>
+                </div>
+                <!-- Item #7 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        Describe to me the first time you tried to use the washing machine.
+                      </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Most students' answers to this question matched their answers to the question asking them to walk through their laundry routine, although some students added 
+                        points of confusion on their first time such as where to insert their detergent since the machines lacked instructions on that.
+                      </div>
+                    </div>
+                </div>
+                <!-- Item #8 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEight">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                          Is there a time that you had difficulty doing the laundry at school?
+                      </button>
+                    </h2>
+                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Most students did not provide a specific time which they felt like they struggled significantly with laundry, however, some provided stories where they accidentally 
+                        dropped items when loading or unloading the washing machine. One student mentioned that he inserted the tide pod into the liquid detergent tray once when he had to 
+                        borrow his roommate's pods after running out of his own detergent.
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Interface Components Carousel -->
+        <div id="Sketches" class="bg-yellow-400 p-5 flex flex-col justify-center items-center">
+            <h2 class="pb-5 font-bold text-4xl">Key Interface Components</h2>
+            <!-- Carousel from Bootstrap -->
+            <div id="carouselExampleIndicators" class="carousel slide w-3/4" data-bs-ride="true">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/c1.png" class="d-block w-100" alt="full view of washer">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/c2.png" class="d-block w-100" alt="zoomed view of detergent tray">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/c3.png" class="d-block w-100" alt="zoomed view of washer's control panel">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <p class="text-xl text-center font-normal mt-4 w-3/4 p-3 rounded-xl bg-yellow-50">
+                The washing machine consists of the main tub where clothes are loaded into, a slidable tray for liquid detergent, 
+                a control console, and in Brown's case, a payment slot which is currently deactivated. Within the detergent tray, 
+                there are four compartments, each of a different depth and size. On the control console, there are controls to toggle 
+                the soil level, cycle speed, and temperature.
+              </p>
+        </div>
+        <!-- Observations -->
+        <div id="Observations" class="flex flex-col justify-center bg-yellow-50 py-5">
+            <h2 class="font-bold text-4xl text-center">Key Observations</h2>
+            <div class="flex flex-row justify-evenly items-center mt-5 pb-3">
+                <div class="m-1 rounded-xl bg-yellow-400 px-5 py-3 w-1/3 min-h-full">
+                    <h2 class="py-2 font-semibold text-xl">Preparation</h2>
+                    <ul class="text-sm font-normal list-disc leading-9">
+                        <li>Students do laundry when they also have other work to do so they can maximize waiting time, often on afternoons.</li>
+                        <li>Students make separate trip to laundry room to check on washer availability prior to bringing down their laundry.</li>
+                        <li>If none are available, students tend not to go down again for 15-30 min longer than the displayed time-left.</li>
+                    </ul>
+                </div>
+                <div class="m-1 rounded-xl bg-yellow-400 px-5 py-3 w-1/3 min-h-full">
+                    <h2 class="py-2 font-semibold text-xl">Engagement</h2>
+                    <ul class="text-sm font-normal list-disc leading-9">
+                        <li>Order of operations: loads washer, insert pod (with clothes) or detergent (in tray), configures preferences, sets timer on personal phone.</li>
+                        <li>Students using liquid detergent averaged more time in the laundry room than those using pods by having to fiddle with the detergent tray and fill it</li>
+                        <li>If clothes are left in a completed washer and all others are in use, some students remove them and set them on top of the washer after waiting 5 min.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Personas -->
+        <div id="Personas" class="flex flex-col justify-center p-5 bg-yellow-400">
+            <h2 class="font-bold text-4xl text-center">Personas</h2>
+            <div class="flex justify-evenly items-center p-4 my-4 bg-yellow-50 rounded-xl">
+                <div class="flex flex-col justify-evenly items-center w-1/3">
+                    <img src="./assets/ian.png" class="w-40 my-2" />
+                    <h3 class="m-2 font-bold text-xl">Impatient Ian</h3>
+                    <p class="my-2">
+                        Impatient Ian is a busy junior taking 5 courses and applying for internships. He has not done his laundry in 2 weeks and is now 
+                        out of clothes. He must do his wash so he has clothes for his interview tomorrow.
+                    </p>
+                </div>
+                <img src="./assets/IanEmpathyMap.png" class="w-200" />
+            </div>
+            <div class="flex flex-col justify-center items-center p-3 rounded-xl bg-yellow-50 text-base font-normal">
+                <div>
+                    <strong>Problem: </strong>Ian is frustrated by the absence of a notification from the washing machine to both the previous user and 
+                    next user, which happens to be him, which forces him to make multiple trips down and move other people's laundry, wasting his precious time.
+                </div>
+                <div>
+                    <strong>Representation: </strong>Ian represents the numerous busy upperclassmen who live oncampu and rely on dorm washing machines. 
+                    They have limited time in their day to do laundry and hates to waste it on unnecessary trips and actions.
+                </div>
+            </div>
+            <div class="flex justify-evenly items-center p-4 my-4 bg-yellow-50 rounded-xl">
+                <div class="flex flex-col justify-evenly items-center w-1/3">
+                    <img src="./assets/fred.png" class="w-40 my-2" />
+                    <h3 class="m-2 font-bold text-xl">Freshman Fred</h3>
+                    <p class="my-2">
+                        Freshman Fred is a freshman doing laundry for the first time on campus. In fact, it is his first time doing laundry ever because his 
+                        mom did his laundry when he was in high school.
+                    </p>
+                </div>
+                <img src="./assets/FredEmpathyMap.png" class="w-200" />
+            </div>
+            <div class="flex flex-col justify-center items-center p-3 rounded-xl bg-yellow-50 text-base font-normal">
+                <div>
+                    <strong>Problem: </strong>Fred is confused and intimidated by the lack of instructions and clear action flow conveyed by the washing machine. 
+                    Having never done laundry before, he does not know how to navigate the numerous steps required to operate the machine.
+                </div>
+                <div>
+                    <strong>Representation: </strong>Fred represents the hundreds of freshmen living independently for the first time and needing to do a chore 
+                    that they've relied on their mothers for. After sitting and observing in the freshman-only Metcalf Hall for an hour, such students are not as rare as expected.
+                </div>
+            </div>
+        </div>
+        <!-- Storyboard -->
+        <div id="Storyboard" class="flex flex-col justify-center bg-yellow-50 py-5">
+            <h2 class="font-bold text-4xl text-center">Impatient Ian's Laundry Experience</h2>
+            <div class="flex flex-row flex-wrap justify-evenly items-center">
+                <div class="frame">
+                    <img src="./assets/sb1.JPEG" class="p-5 w-full" alt="A student named Ian sitting at his desk" />
+                    <div class="w-4/5">Ian is a junior at Brown living on campus. He has 3 projects and 2 tests next week as well as 4 interviews, none of which he has prepared for.</div>
+                </div>
+                <div class="frame">
+                    <img src="./assets/sb2.JPEG" class="p-5 w-full" alt="Ian's laundry" />
+                    <div class="w-4/5">The thought of interview reminds him to look for an outfit. When he turns, he sees an empty closet and an overflowing laundry.</div>
+                </div>
+                <div class="frame">
+                    <img src="./assets/sb3.JPEG" class="p-5 w-full" alt="Ian running downstairs" />
+                    <div class="w-4/5">Upon realizing, Ian runs downstairs to check on the wahsers' availability.</div>
+                </div>
+                <div class="frame">
+                    <img src="./assets/sb4.JPEG" class="p-5 w-full" alt="Ian on both knees in front of occupied washers" />
+                    <div class="w-4/5">Only to see that none of the washers are available...</div>
+                </div>
+                <div class="frame">
+                    <img src="./assets/sb5.JPEG" class="p-5 w-full" alt="Ian walking up stairs then downstairs" />
+                    <div class="w-4/5">Ian then heads back to his room to wait for 15 minutes before walking back down with his laundry.</div>
+                </div>
+                <div class="frame">
+                    <img src="./assets/sb6.JPEG" class="p-5 w-full" alt="A washer that has finished running" />
+                    <div class="w-4/5">Although all the washers are done, no one has come down to remove their clothes yet so all of them are still full.</div>
+                </div>
+                <div class="frame">
+                    <img src="./assets/sb7.JPEG" class="p-5 w-full" alt="Ian taking clothes out of washer" />
+                    <div class="w-4/5">Out of impatience, Ian removes the other people's clothes and sets them on top of the washing machines so that he can load his laundry.</div>
+                </div>
+                <div class="frame">
+                    <img src="./assets/sb8.JPEG" class="p-5 w-full" alt="A sock dropping out of washer" />
+                    <div class="w-4/5">In his haste, Ian drops a sock while loading his clothes into the washer...</div>
+                </div>
+                <div class="frame">
+                    <img src="./assets/sb9.JPEG" class="p-5 w-full" alt="Ian's tide pod in his pocket" />
+                    <div class="w-4/5">and forgets to throw in his tide pod.</div>
+                </div>
+                <div class="frame">
+                    <img src="./assets/sb10.JPEG" class="p-5 w-full" alt="Ian on his phone's timer app" />
+                    <div class="w-4/5">Ian then configures the wash settings to the low option for each, presses the start button, and sets a timer on his phone to what's displayed on the washer.</div>
+                </div>
+                <div class="frame">
+                    <img src="./assets/sb11.JPEG" class="p-5 w-full" alt="Ian sitting at his desk and phone ringing" />
+                    <div class="w-4/5">Ian heads back to his room to keep working while he waits for his alarm to sound, notifying him that his wash is done.</div>
+                </div>
+                <div class="frame">
+                    <img src="./assets/sb12.JPEG" class="p-5 w-full" alt="Ian looking at his tide pode and angry face" />
+                    <div class="w-4/5">As he goes to unload the washer after his alarm sounded, Ian realizes that he forgot to put in his tide pod and sees the sock he dropped, making his day even worse.</div>
+                </div>
+            </div>
+        </div>
+      </div>
+</body>
+</html>
